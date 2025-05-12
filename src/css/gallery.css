@@ -27,17 +27,3 @@
   object-fit: cover;
   max-height: 200px;
 }
-
-/* .sl-caption .sl-caption-text {
-  display: block;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
-
-/* .sl-caption .sl-caption-text {
-  display: block;
-  white-space: normal;
-  word-break: break-word;
-} */

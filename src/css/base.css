@@ -46,6 +46,6 @@ main:has(.back-link) {
 .task-link {
   border: 1px solid gray;
   background-color: bisque;
-  width: 15%;
+  width: 250px;
   border-radius: 10%;
 }
