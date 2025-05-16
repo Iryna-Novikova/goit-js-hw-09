@@ -7,14 +7,23 @@ const formEl = document.querySelector(".feedback-form");
 const localStrgFormKey = "feedback-form-state";
 
 // читаємо дані зі сховища
-// const formInStrg = localStorage.getItem(localStrgFormKey) ?? '';
-// let FD = JSON.parse(formInStrg);
-// console.log(FD);
-// // if !(formInStrg === '') { 
-// //     formData = JSON.parse(formInStrg);
-// //     console.log(formData);git 
-// // }
-// console.log('in storage: ', formInStrg);
+let formInStrg = '';
+try {
+    formInStrg = localStorage.getItem(localStrgFormKey) ?? '';
+    formData = JSON.parse(formInStrg);
+//    formData = JSON.parse(localStorage.getItem(localStrgFormKey))
+}  
+catch (error) {
+    console.log(error.name);
+}
+
+// formData = JSON.parse(formInStrg);
+formEl.email.value = formData.email;
+formEl.message.value = formData.message;
+    
+// console.log(formInStrg);
+// console.log(formData);
+// console.log(formEl.email.value, '  ', formEl.message );
 
 // прослуховувач події введення
 formEl.addEventListener('input', heandlerFormInput);
