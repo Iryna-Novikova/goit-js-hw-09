@@ -46,6 +46,8 @@ function heandlerFormSbmt(evt) {
         console.log(formData);
         localStorage.removeItem(localStrgFormKey);
         formEl.reset();
+        formData.email = '';
+        formData.message = '';
     }  
  }
 
