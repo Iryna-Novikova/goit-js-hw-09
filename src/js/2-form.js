@@ -11,7 +11,6 @@ let formInStrg = '';
 try {
     formInStrg = localStorage.getItem(localStrgFormKey) ?? '';
     formData = JSON.parse(formInStrg);
-//    formData = JSON.parse(localStorage.getItem(localStrgFormKey))
 }  
 catch (error) {
     console.log(error.name);
@@ -21,10 +20,6 @@ catch (error) {
 formEl.email.value = formData.email;
 formEl.message.value = formData.message;
     
-// console.log(formInStrg);
-// console.log(formData);
-// console.log(formEl.email.value, '  ', formEl.message );
-
 // прослуховувач події введення
 formEl.addEventListener('input', heandlerFormInput);
 

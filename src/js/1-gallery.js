@@ -89,7 +89,6 @@ function getListElemMrkup(image) {
  }
 
 const listImagesMrkup = getListMrkup(images);
-// console.log(listImagesMrkup);
 
 listElem.insertAdjacentHTML("afterbegin", listImagesMrkup);
 
